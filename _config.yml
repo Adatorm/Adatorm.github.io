@@ -15,8 +15,8 @@ defaults: # Use all configuration options<https://jekyllrb.com/docs/configuratio
             theme-base: theme-base-07 # Optional theme colors include08~0f，see <https://github.com/poole/lanyon>
             layout-reverse: false # After opening /sidebar/ on the right，On the left
             sidebar-overlay: false # Text does not follow after opening /sidebar/ Move and move
-          append_to_head: # 通过内嵌html的方式引入并定制插件，删改前确定知道自己在做什么。定制插件的方式可以参考这篇文章 </_posts/2019-01-18-基于Jekyll搭建个人博客/>
-            - | #一些页面优化标签，看不懂可跳过
+          append_to_head: # Inline html To introduce and customize plugins，Make sure you know what you are doing before deleting。The way to customize the plugin can refer to this article </_posts/2019-01-18-基于Jekyll搭建个人博客/>
+            - | #Some on-page optimization tags，If you don't understand, you can skip
               <meta
                 name="viewport"
                 content="width=device-width, initial-scale=1.0, maximum-scale=1"
@@ -31,7 +31,7 @@ defaults: # Use all configuration options<https://jekyllrb.com/docs/configuratio
                 title="RSS"
                 type="application/rss+xml"
               />
-            - | # 网站小图标，可换成你自己的图片，改href中的部分即可
+            - | # Website icon，Can be replaced with your own picture，change href Part of
               <link
                 rel="apple-touch-icon-precomposed"
                 href="https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320"
@@ -41,17 +41,17 @@ defaults: # Use all configuration options<https://jekyllrb.com/docs/configuratio
                 icon"
                 href="https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=32"
               />
-            - | # 来自lanyon的页面样式，不要改
+            - | # From lanyon Page style，Don't change
               <link
                 rel="stylesheet"
                 href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css"
               />
-            - | # 引入fontawesome图标样式
+            - | # Introduce fontawesome Icon style
               <link
                 rel="stylesheet"
                 href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
               />
-            - | # 引入live2d看板娘！不需要可以把这一项都删掉
+            - | # Introduce live2d Signboard girl！You don’t need to delete this item
               <link
                 rel="stylesheet"
                 href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
@@ -83,28 +83,28 @@ defaults: # Use all configuration options<https://jekyllrb.com/docs/configuratio
                       "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
                       "content": {
                         "link": ["https://wu-kan.cn"],
-                        "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
+                        "skin": ["You want to replace it with my friend?？", "Let her take a vacation~"],
                         "custom": [{
                           "selector": "a",
                           "type": "link",
                         }, {
                           "selector": ".sidebar-toggle",
-                          "text": "打开侧边栏叭~"
+                          "text": "Open the sidebar~"
                         }, {
                           "selector": ".effect-info",
-                          "text": "哇，你发现了什么！"
+                          "text": "Wow，what have you found！"
                         }, {
                           "selector": "#sidebar-search-input",
-                          "text": "想搜索什么呢？很多干货哦！"
+                          "text": "What do you want to search for？A lot of dry goods！"
                         }, {
                           "selector": "#toc",
-                          "text": "这是目录~"
+                          "text": "This is the directory~"
                         }, {
                           "selector": ".page-title",
-                          "text": "这是标题~"
+                          "text": "This is the title~"
                         }, {
                           "selector": ".v",
-                          "text": "评论没有审核，要对自己的发言负责哦~"
+                          "text": "Comment not reviewed，Be responsible for your speech~"
                         }]
                       },
                       "model": [
@@ -120,12 +120,12 @@ defaults: # Use all configuration options<https://jekyllrb.com/docs/configuratio
                     });
                   }'
               ></script>
-            - | # 百度爬虫推送，http站点使用 http://push.zhanzhang.baidu.com/push.js
+            - | # Baidu crawler push，http Site usage http://push.zhanzhang.baidu.com/push.js
               <script
                 src='https://zz.bdstatic.com/linksubmit/push.js'
                 defer="defer"
               ></script>
-            - | # 网站背景图片，分竖屏、宽屏；改链接即可，不想用可以把这一项全删掉；要换壁纸图片的话可把url内的部分换成你自己的，比如你放在 /assets/image/background.jpg，那就改成 url(/assets/image/background.jpg)
+            - | # Website background image，Split vertical screen、宽屏；Widescreen，If you don't want to use it, you can delete all of this item；If you want to change the wallpaper image, you can change the part in the url to your own，For example, you put /assets/image/background.jpg，Then change to url(/assets/image/background.jpg)
               <style>
                 .wrap {
                   min-height: 100vh;
@@ -142,7 +142,7 @@ defaults: # Use all configuration options<https://jekyllrb.com/docs/configuratio
                   }
                 }
               </style>
-            - | # 网站字体
+            - | # Website font
               <style>
                 html,
                 h1,
@@ -155,7 +155,7 @@ defaults: # Use all configuration options<https://jekyllrb.com/docs/configuratio
                   font-family: Menlo, Monaco, "Courier New", Microsoft JhengHei, monospace;
                 }
               </style>
-            - | #修复点击侧边栏按钮回到顶部的问题
+            - | # Fix the problem of clicking the sidebar button to return to the top
               <style>
                 .sidebar-checkbox {
                   display: none;
@@ -164,14 +164,14 @@ defaults: # Use all configuration options<https://jekyllrb.com/docs/configuratio
                   position: fixed;
                 }
               </style>
-            - | #修复行内图片默认样式
+            - | # Fix the default style of inline pictures
               <style>
                 img {
                   display: inline-block;
                   margin: 0;
                 }
               </style>
-            - | # 侧边栏头像效果
+            - | # Sidebar avatar effect
               <style>
                 .effect {
                   margin: 1rem;
@@ -202,7 +202,7 @@ defaults: # Use all configuration options<https://jekyllrb.com/docs/configuratio
                   transform: rotate3d(0, 1, 0, -180deg);
                 }
               </style>
-            - | # 彩虹滚动条，仅对Chrome系浏览器生效
+            - | # Rainbow scroll bar，Only for Chrome Valid in browser
               <style>
                 ::-webkit-scrollbar {
                   width: 4px;
@@ -212,23 +212,23 @@ defaults: # Use all configuration options<https://jekyllrb.com/docs/configuratio
                   background-image: linear-gradient(0deg, #00C0FF 0%, #FFCF00 50%, #FC4F4F 100%);
                 }
               </style>
-            - | # 选中字体颜色
+            - | # Select font color
               <style>
                 ::selection {
                   color: #fff;
                   background: #26351c;
                 }
               </style>
-          sidebar: # 此配置项下是一些关于侧边栏的配置
-            disable: true # 是否不显示sidebar
-            wordcount: # 全站字数统计
-              enable: false # 本地调试时建议关闭，非常影响站点生成速度（所需时间与博文数量的平方成正比）
-        home: # 配置见<https://revealjs.com/>
+          sidebar: # Under this configuration item are some configurations about the sidebar
+            disable: true # Does it not show sidebar
+            wordcount: # Total station word count
+              enable: false # It is recommended to close when debugging locally，Very affect the site generation speed（The time required is proportional to the square of the number of blog posts）
+        home: # See configuration<https://revealjs.com/>
           append_to_section_tag:
             - key: data-markdown
-            - key: data-separator # 水平展示页分隔符
+            - key: data-separator # Horizontal display page separator
               value: <!-- slide -->
-            - key: data-separator-vertical # 垂直展示页分隔符
+            - key: data-separator-vertical # Vertical display page separator
               value: <!-- slide vertical=true -->
             - key: data-background-color
               value: "White"
@@ -262,34 +262,34 @@ defaults: # Use all configuration options<https://jekyllrb.com/docs/configuratio
               });
             "></script>
 
-# githubpage上支持的插件见<https://pages.github.com/versions/>
+# githubpage See the supported plugins on <https://pages.github.com/versions/>
 plugins: # <https://jekyllrb.com/docs/plugins/>
-  - jekyll-readme-index # 使用readme做index，从而和github渲染效果一致
-  - jekyll-default-layout # 为每个markdown自动生成layout
-  - jekyll-seo-tag # 为每个页面生成标题
+  - jekyll-readme-index # use readme do index，Thereby and github Consistent rendering
+  - jekyll-default-layout # For each of markdown Automatic generated layout
+  - jekyll-seo-tag # Generate title for each page
 
 readme_index:
   with_frontmatter: true
 
-# permalink: /_posts/:year-:month-:day-:title/ #生成文章的地址格式，我希望它和_posts目录下的格式一样
-# timezone: Asia/Shanghai # 解决githubpage显示时间不正确的问题，见<https://www.iana.org/time-zones>
-# future: false # 不发布时间在未来的文章
+# permalink: /_posts/:year-:month-:day-:title/ # The address format of the generated article，I hope it and _posts The format under the directory is the same
+# timezone: Asia/Shanghai # solve githubpage Incorrect display time，see <https://www.iana.org/time-zones>
+# future: false # Do not post articles in the future
 
-# limit_posts: 999 # 限制博文数量
+# limit_posts: 999 # Limit the number of blog posts
 # encoding: utf-8
 
 markdown: kramdown
-kramdown: # 见<https://kramdown.gettalong.org/options.html>
-  input: GFM # 见<http://jekyllcn.com/docs/configuration/#kramdown>
-  syntax_highlighter_opts: # 可见<https://kramdown.gettalong.org/syntax_highlighter/rouge.html>
-    disable: true # 关掉默认的高亮，换用prismjs
+kramdown: # see <https://kramdown.gettalong.org/options.html>
+  input: GFM # see <http://jekyllcn.com/docs/configuration/#kramdown>
+  syntax_highlighter_opts: # visible <https://kramdown.gettalong.org/syntax_highlighter/rouge.html>
+    disable: true # Turn off the default highlight，Switch to prismjs
 
-# 以下为 githubpage上不可修改的参数，见<https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll>
-#lsi: false # 为相关文章生成索引
-#safe: true # 禁用自定义插件
-#source: [your repo's top level directory] # Jekyll 读取文件的路径
-#incremental: false # 增量生成
-#highlighter: rouge # 代码高亮器
+# The following is githubpage Unmodifiable parameters，see <https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll>
+#lsi: false # Generate an index for related articles
+#safe: true # Disable custom plugins
+#source: [your repo's top level directory] # Jekyll Path to read file
+#incremental: false # Incremental generation
+#highlighter: rouge # Code highlighter
 #gist:
 #  noscript: false
 #kramdown:
