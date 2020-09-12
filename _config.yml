@@ -1,19 +1,20 @@
-# 这个文件仅用于生成文档，配置项并不完整，可以在<https://github.com/wu-kan/wu-kan.github.io/blob/master/_config.yml>获取完整配置文档及示例！
-title: jekyll-theme-WuK # 站点标题
-description: A content-first, sliding sidebar theme for Jekyll. # 头像背后的信息，<br/>代表换行
+# This file is only used to generate documentation, the configuration items are not complete，
+# allowable<https://github.com/Adatorm/Adatorm.github.io/edit/master/_config.yml>Get complete configuration documents and examples！
+title: Guner's Backyard # Site title
+description: A content-first, sliding sidebar theme for Jekyll. # Information behind the avatar，<br/>Represents newline
 url: https://jekyll-theme-WuK.wu-kan.cn
-baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
+baseurl: "" # If your blog is built in a certain directory, please add the name of the directory here, and in all the links configured below`/assets`Also add before, that is`/your_baseurl/assets`。Don’t end this item'/'。
 
-defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/front-matter-defaults/>功能进行配置
+defaults: # Use all configuration options<https://jekyllrb.com/docs/configuration/front-matter-defaults/>Function configuration
   - scope:
       path: "" # an empty string here means all files in the project
-    values: # 以下配置项也可以在任意页面自定义
-      jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
+    values: # The following configuration items can also be customized on any page
+      jekyll-theme-WuK: # The custom styles of my theme are all in this namespace
         default:
           body:
-            theme-base: theme-base-07 # 可选的主题色包括08~0f，见 <https://github.com/poole/lanyon>
-            layout-reverse: false # 开启后sidebar在右边，反之左边
-            sidebar-overlay: false # 开启后正文不随sidebar移动而移动
+            theme-base: theme-base-07 # Optional theme colors include08~0f，see <https://github.com/poole/lanyon>
+            layout-reverse: false # After opening /sidebar/ on the right，On the left
+            sidebar-overlay: false # Text does not follow after opening /sidebar/ Move and move
           append_to_head: # 通过内嵌html的方式引入并定制插件，删改前确定知道自己在做什么。定制插件的方式可以参考这篇文章 </_posts/2019-01-18-基于Jekyll搭建个人博客/>
             - | #一些页面优化标签，看不懂可跳过
               <meta
