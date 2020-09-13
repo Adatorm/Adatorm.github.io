@@ -220,7 +220,7 @@ defaults: # Use all configuration options<https://jekyllrb.com/docs/configuratio
                 }
               </style>
           sidebar: # Under this configuration item are some configurations about the sidebar
-            disable: true # Does it not show sidebar
+            disable: false # Does it show/not show sidebar
             wordcount: # Total station word count
               enable: false # It is recommended to close when debugging locally，Very affect the site generation speed（The time required is proportional to the square of the number of blog posts）
         home: # See configuration<https://revealjs.com/>
