@@ -224,8 +224,6 @@ defaults: # Use all configuration options<https://jekyllrb.com/docs/configuratio
             wordcount: # Total station word count
               enable: false # It is recommended to close when debugging locally，Very affect the site generation speed（The time required is proportional to the square of the number of blog posts）
         home: # See configuration<https://revealjs.com/>
-          sidebar:
-            disable: false
           append_to_section_tag:
             - key: data-markdown
             - key: data-separator # Horizontal display page separator
