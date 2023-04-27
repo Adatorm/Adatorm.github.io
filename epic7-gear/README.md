@@ -1,8 +1,8 @@
 # Tool Link
 
-+ en version (https://meowyih.github.io/epic7-gear/index.html?lang=en)
-+ tw version (https://meowyih.github.io/epic7-gear/index.html?lang=tw)
-+ cn version (https://meowyih.github.io/epic7-gear/index.html?lang=cn)
++ en version (https://Adatorm.github.io/epic7-gear/index.html?lang=en)
++ tw version (https://Adatorm.github.io/epic7-gear/index.html?lang=tw)
++ cn version (https://Adatorm.github.io/epic7-gear/index.html?lang=cn)
 
 # What is this?
 
