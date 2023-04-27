@@ -1,11 +1,11 @@
 # Tool Link
 
-https://meowyih.github.io/epic7-morale/index.html
+https://Adatorm.github.io/epic7-morale/index.html
 
 localization
 
 zh_tw:
-https://meowyih.github.io/epic7-morale/index.html?lang=tw
+https://Adatorm.github.io/epic7-morale/index.html?lang=tw
 
 # What is this?
 
@@ -24,7 +24,7 @@ All heroes' data was pulled from epic7 database api (https://epicsevendb.com/).
 
 # How to update data?
 
-Pull data using this tool https://meowyih.github.io/epic7-data/index.html and then copy the json to g_raw in data.js.
+Pull data using this tool https://Adatorm.github.io/epic7-data/index.html and then copy the json to g_raw in data.js.
 
 # Known issue
 
